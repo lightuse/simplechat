@@ -80,7 +80,7 @@ export class BedrockChatbotStack extends cdk.Stack {
     });
 
     // S3バケットの作成
-    const websiteBucket = new s3.Bucket(this, 'WebsiteBucket', {
+    const websiteBucket = new s3.Bucket(this, 'NewWebsiteBucket', {
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       autoDeleteObjects: true,
